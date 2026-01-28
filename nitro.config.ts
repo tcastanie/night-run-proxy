@@ -11,7 +11,7 @@ export default defineConfig({
       cors: true,
       headers: {
         "access-control-allow-methods": "GET",
-        "access-control-allow-origin": "*",
+        "access-control-allow-origin": "https://xviniette.github.io",
       },
     },
   },
