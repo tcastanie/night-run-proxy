@@ -1,9 +1,19 @@
 import { defineConfig } from "nitro";
 
 export default defineConfig({
+  compatibilityDate: "2026-01-28",
   serverDir: "./",
   runtimeConfig: {
     rssUrl: "",
+  },
+  routeRules: {
+    "/rss": {
+      cors: true,
+      headers: {
+        "access-control-allow-methods": "GET",
+        "access-control-allow-origin": "*",
+      },
+    },
   },
   experimental: {
     tasks: true,
