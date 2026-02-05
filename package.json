@@ -6,7 +6,7 @@
     "preview": "npx srvx --prod .output/"
   },
   "devDependencies": {
-    "nitro": "latest",
-    "rolldown": "latest"
+    "nitro": "3.0.1-alpha.2",
+    "rolldown": "1.0.0-rc.3"
   }
 }
