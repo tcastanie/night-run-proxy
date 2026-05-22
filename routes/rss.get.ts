@@ -14,5 +14,8 @@ export default defineCachedHandler(
     }
     return rss;
   },
-  { maxAge: 60 * 60 }, // 1 hour
+  {
+    maxAge: 60 * 60, // 1 hour
+    swr: false,
+  },
 );
